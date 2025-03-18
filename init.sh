@@ -60,19 +60,21 @@ confirm_step() {
 # Welcome message
 clear
 cat << "EOF"
-    __  ___          ____             __ __ _ __ 
-   /  |/  /___ _____/ __ \___ _   __/ //_/(_) /_
-  / /|_/ / __ `/ __/ / / / _ \ | / / ,<  / / __/
- / /  / / /_/ / /_/ /_/ /  __/ |/ / /| |/ / /_  
-/_/  /_/\__,_/\__/_____/\___/|___/_/ |_/_/\__/  
-                                                 
+
+▗▄▄▄▖▗▖ ▗▖▗▄▄▄▖▗▄▄▄▖▗▖  ▗▖ ▗▄▖     ▗▖  ▗▖ ▗▄▖  ▗▄▄▖    ▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▄▄▄▖    
+  █  ▐▌ ▐▌▐▌   ▐▌   ▐▛▚▖▐▌▐▌ ▐▌    ▐▛▚▞▜▌▐▌ ▐▌▐▌         █  ▐▛▚▖▐▌  █    █      
+  █  ▐▛▀▜▌▐▛▀▀▘▐▛▀▀▘▐▌ ▝▜▌▐▛▀▜▌    ▐▌  ▐▌▐▛▀▜▌▐▌         █  ▐▌ ▝▜▌  █    █      
+  █  ▐▌ ▐▌▐▙▄▄▖▐▙▄▄▖▐▌  ▐▌▐▌ ▐▌    ▐▌  ▐▌▐▌ ▐▌▝▚▄▄▖    ▗▄█▄▖▐▌  ▐▌▗▄█▄▖  █      
+                                                                                
+                                                                                
+                                                                                                                          
 EOF
 
-echo -e "${YELLOW}Welcome to MacDevKit - Your Ultimate macOS Development Environment Setup Tool${NC}"
+echo -e "${YELLOW}Welcome!${NC}"
 echo
 echo -e "${CYAN}This script will help you:${NC}"
-echo -e "  ${GREEN}✓${NC} Install essential developer tools"
-echo -e "  ${GREEN}✓${NC} Configure your development environment"
+echo -e "  ${GREEN}✓${NC} Install essential tools for my writing and dev work"
+echo -e "  ${GREEN}✓${NC} Configure your writing environment"
 echo -e "  ${GREEN}✓${NC} Set up programming languages and frameworks"
 echo -e "  ${GREEN}✓${NC} Install useful applications"
 echo -e "  ${GREEN}✓${NC} Optimize your macOS settings"

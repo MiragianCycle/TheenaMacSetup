@@ -1,41 +1,9 @@
-<p align="center">
-  <h1 align="center">🚀 MacDevKit</h1>
-</p>
 
-<p align="center">
-  <img src="docs/brand.webp" alt="MacDevKit Logo" width="200">
-</p>
-
-<p align="center">
-  <strong>The Ultimate Toolkit for Setting Up macOS Development Environment in One Click</strong>
-</p>
-
-<p align="center">
-  <a href="#-features">✨ Features</a> •
-  <a href="#-installation">🔧 Installation</a> •
-  <a href="#-usage">📖 Usage</a> •
-  <a href="#-included-tools">🛠️ Included Tools</a> •
-  <a href="#-customization">⚙️ Customization</a> •
-  <a href="#-contributing">👥 Contributing</a> •
-  <a href="#-license">📄 License</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/jarvislin94/MacDevKit/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/jarvislin94/MacDevKit" alt="License">
-  </a>
-  <img src="https://img.shields.io/badge/platform-macOS-lightgrey" alt="Platform">
-  <img src="https://img.shields.io/badge/shell-bash-4EAA25" alt="Shell">
-  <img src="https://img.shields.io/badge/macOS-Monterey%20|%20Ventura%20|%20Sonoma-blue" alt="macOS">
-</p>
-
-_[中文文档](README.md) | English_
-
----
+# Theena's Mac Setup 
 
 ## ✨ Features
 
-MacDevKit is a comprehensive macOS development environment setup toolkit designed for developers, capable of setting up a new Mac development environment in minutes.
+This is an experimental script to help init any new Mac device. 
 
 - 🚀 **One-Click Installation** - Set up all development tools and configurations with a single command
 - 🎨 **Beautiful Interface** - Colorful output and clear progress indicators
@@ -45,9 +13,6 @@ MacDevKit is a comprehensive macOS development environment setup toolkit designe
 - 💻 **Support for Intel and Apple Silicon** - Automatically detects and adapts to different Mac chips
 - 🔒 **Secure and Reliable** - Uses official sources and secure installation methods
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/12573233/236685568-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0d.gif" alt="MacDevKit Demo" width="600">
-</p>
 
 ## 🔧 Installation
 
@@ -71,7 +36,7 @@ After running the script, you'll see an interactive interface guiding you throug
 1. The script will first install basic tools like Homebrew, Git, and Xcode Command Line Tools
 2. Then, it will set up your Git configuration and generate SSH keys
 3. Next, it will install development tools like VS Code, Node.js, Docker, etc.
-4. You can choose to install additional applications like Chrome, Slack, Postman, etc.
+4. You can choose to install additional applications like Chrome or a web browser of your choice (I use Arc and Zen). Also includes a variety of lightweight PDF readers (such as Skim, Zathura)
 5. Finally, you can choose to configure macOS system settings to optimize your development experience
 
 The script displays colorful output, clearly indicating current progress and success/failure status.
@@ -124,7 +89,10 @@ MacDevKit includes the following development tools and applications:
 - **Google Chrome** - Web browser
 - **Firefox** - Web browser
 - **Yabai** - Window manager
-- **Alfred** - Productivity tool
+- **skhd** - Simple hotkey daemon for macOS
+- **Karabiner-Elements** - Keyboard configuration tool for fine-tuned keyboard-first control of the Mac device 
+- **Raycast** - Productivity tool
+- **Zathura and Skim** - PDF Readers 
 
 ## ⚙️ Customization
 

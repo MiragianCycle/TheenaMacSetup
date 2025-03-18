@@ -88,10 +88,11 @@ MacDevKit includes the following development tools and applications:
 
 ### Development Environment
 
+- **NeoVim**
+- **Emacs** (Mac Optimized) 
 - **Visual Studio Code** - Code editor with common extensions
-- **iTerm2** - Terminal emulator
+- **Kitty** - Terminal emulator
 - **Oh My Zsh** - Zsh configuration framework with Powerlevel10k theme and plugins
-- **Docker** - Containerization platform
 
 ### Programming Languages and Runtimes
 
@@ -99,17 +100,12 @@ MacDevKit includes the following development tools and applications:
 - **Python** - Programming language
 - **Go** - Programming language
 - **Rust** - Programming language
+- **Common Lisp** - Programming Language 
 
 ### Database Tools
 
-- **PostgreSQL** - Relational database
-- **MySQL** - Relational database
 - **SQLite** - Lightweight database
 
-### Cloud Tools
-
-- **AWS CLI** - Amazon Web Services command-line tool
-- **Terraform** - Infrastructure as code tool
 
 ### Command Line Tools
 
@@ -127,13 +123,8 @@ MacDevKit includes the following development tools and applications:
 
 - **Google Chrome** - Web browser
 - **Firefox** - Web browser
-- **Slack** - Team collaboration tool
-- **Postman** - API testing tool
-- **Rectangle** - Window manager
+- **Yabai** - Window manager
 - **Alfred** - Productivity tool
-- **Notion** - Note-taking and collaboration tool
-- **Obsidian** - Knowledge management tool
-- **Figma** - Design tool
 
 ## ⚙️ Customization
 

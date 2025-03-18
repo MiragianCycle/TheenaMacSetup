@@ -193,30 +193,7 @@ if confirm_step "Install Visual Studio Code" "Visual Studio Code is a popular co
     fi
 fi
 
-# Install VS Code extensions
-if command_exists code; then
-    if confirm_step "Install VS Code Extensions" "This step will install useful extensions for VS Code, including support for TypeScript, ESLint, Prettier, Python, Docker, GitHub Copilot, GitLens, Remote Containers, Live Server, and Code Spell Checker."; then
-        print_section "Installing VS Code extensions"
-        extensions=(
-            "ms-vscode.vscode-typescript-next"
-            "dbaeumer.vscode-eslint"
-            "esbenp.prettier-vscode"
-            "ms-python.python"
-            "ms-azuretools.vscode-docker"
-            "github.copilot"
-            "eamodio.gitlens"
-            "ms-vscode-remote.remote-containers"
-            "ritwickdey.liveserver"
-            "streetsidesoftware.code-spell-checker"
-        )
-        
-        for extension in "${extensions[@]}"; do
-            print_info "Installing extension: $extension"
-            code --install-extension "$extension"
-        done
-        print_success "VS Code extensions installed"
-    fi
-fi
+
 
 # Step 6: Install Node.js via NVM
 if confirm_step "Install Node.js via NVM" "Node Version Manager (NVM) allows you to install and manage multiple versions of Node.js. This step will install NVM, the latest LTS version of Node.js, and several useful global npm packages like yarn, typescript, and nodemon."; then
@@ -309,25 +286,11 @@ if confirm_step "Install Oh My Zsh" "Oh My Zsh is a framework for managing your 
     fi
 fi
 
-# Step 9: Install Docker
-if confirm_step "Install Docker" "Docker is a platform for developing, shipping, and running applications in containers. Containers allow you to package an application with all its dependencies and run it in any environment."; then
-    print_section "Installing Docker"
-    if command_exists docker; then
-        print_success "Docker already installed"
-    else
-        brew install --cask docker
-        print_success "Docker installed"
-        print_info "Please open Docker.app to complete the installation"
-    fi
-fi
 
-# Step 10: Install additional developer tools
+
+# Step 9: Install additional developer tools
 if confirm_step "Install Additional Developer Tools" "This step will install various development tools including: build tools (cmake, ninja), programming languages (Python, Go, Rust), database tools (PostgreSQL, MySQL, SQLite), and cloud tools (AWS CLI, Terraform)."; then
     print_section "Installing additional developer tools"
-
-    # Package managers and build tools
-    print_info "Installing build tools (cmake, ninja)"
-    brew install cmake ninja
 
     # Programming languages
     if confirm_step "Install Programming Languages" "This will install Python, Go, and Rust programming languages."; then
@@ -338,14 +301,9 @@ if confirm_step "Install Additional Developer Tools" "This step will install var
     # Database tools
     if confirm_step "Install Database Tools" "This will install PostgreSQL, MySQL, and SQLite database systems."; then
         print_info "Installing database tools (PostgreSQL, MySQL, SQLite)"
-        brew install postgresql mysql sqlite
+        brew install mysql sqlite
     fi
 
-    # Cloud tools
-    if confirm_step "Install Cloud Tools" "This will install AWS CLI and Terraform for cloud infrastructure management."; then
-        print_info "Installing cloud tools (AWS CLI, Terraform)"
-        brew install awscli terraform
-    fi
 
     # Useful command line tools
     if confirm_step "Install Command Line Tools" "This will install various useful command line tools like jq (JSON processor), ripgrep (fast grep), bat (better cat), and more."; then
@@ -383,11 +341,9 @@ apps=(
     "firefox"
     "slack"
     "postman"
-    "rectangle"     # Window manager
-    "alfred"        # Spotlight replacement
-    "notion"        # Note-taking
-    "obsidian"      # Note-taking
-    "figma"         # Design tool
+    "yabai"     # Window manager
+    "skhd"
+    "karabiner-elements" 
 )
 
 echo -e "${CYAN}The following applications are available for installation:${NC}"
@@ -441,12 +397,6 @@ if confirm_step "Configure macOS Settings" "This will configure various macOS se
         defaults write NSGlobalDomain KeyRepeat -int 2
         defaults write NSGlobalDomain InitialKeyRepeat -int 15
         print_success "Keyboard repeat rate increased"
-    fi
-    
-    # Disable auto-correct
-    if confirm_step "Disable Auto-Correct" "This will disable automatic text correction, which can be annoying when coding."; then
-        defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-        print_success "Auto-correct disabled"
     fi
     
     # Require password immediately after sleep or screen saver begins

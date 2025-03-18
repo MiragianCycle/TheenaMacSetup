@@ -19,8 +19,6 @@ This is an experimental script to help init any new Mac device.
 Download init.sh and run MacDevKit:
 
 ```bash
-# Download the script
-curl -fsSL https://raw.githubusercontent.com/jarvislin94/MacDevKit/main/init.sh -o init.sh
 
 # Make the script executable
 chmod +x init.sh
@@ -119,6 +117,9 @@ Contributions are welcome! If you have suggestions for improvements or have foun
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## CREDIT 
+
+I forked [[Jarvislin94](https://github.com/jarvislin94) original init script and modified it for my needs. 
 ---
 
 <p align="center">
